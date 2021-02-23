@@ -1,6 +1,6 @@
 {
   "name": "@airship/rn-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React Native components, from basic inputs to animated wrappers,  created by Airship to build quality apps.",
   "main": "src/index",
   "types": "src/types",
@@ -20,7 +20,7 @@
     "typescript": "^4.1.5"
   },
   "files": [
-    "build"
+    "src"
   ],
   "bugs": {
     "url": "https://github.com/teamairship/rn-components/issues"
