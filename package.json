@@ -23,5 +23,9 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/teamairship/rn-components/issues"
+  },
+  "homepage": "https://github.com/teamairship/rn-components#readme"
 }
