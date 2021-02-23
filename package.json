@@ -1,9 +1,9 @@
 {
   "name": "@airship/rn-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Native components, from basic inputs to animated wrappers,  created by Airship to build quality apps.",
-  "main": "build/index",
-  "types": "build/types",
+  "main": "build/index.ts",
+  "types": "build/types.ts",
   "repository": "https://github.com/teamairship/rn-components",
   "author": "Austin Jones (jonesaustindev)",
   "license": "MIT",
@@ -15,11 +15,9 @@
     "@types/react": "^17.0.2",
     "@types/react-native": "^0.63.50",
     "eslint": "^7.20.0",
+    "react": "^17.0.1",
+    "react-native": "^0.63.4",
     "typescript": "^4.1.5"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
   },
   "files": [
     "build"
@@ -27,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/teamairship/rn-components/issues"
   },
-  "homepage": "https://github.com/teamairship/rn-components#readme"
+  "homepage": "https://github.com/teamairship/rn-components#readme",
+  "dependencies": {}
 }
