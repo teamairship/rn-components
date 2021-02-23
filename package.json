@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React Native components, from basic inputs to animated wrappers,  created by Airship to build quality apps.",
   "main": "lib/index.js",
-  "types": "lib/global.d.ts",
+  "types": "lib/types.ts",
   "repository": "https://github.com/teamairship/rn-components",
   "author": "Austin Jones (jonesaustindev)",
   "license": "MIT",
