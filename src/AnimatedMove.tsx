@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Animated } from 'react-native';
 import { AnimatedMoveProps } from './types';
 
-const AnimatedMove: React.FC<AnimatedMoveProps> = ({
+export const AnimatedMove: React.FC<AnimatedMoveProps> = ({
   moveOnMount = true,
   triggerMove = false,
   tension = 18,
@@ -52,5 +52,3 @@ const AnimatedMove: React.FC<AnimatedMoveProps> = ({
     </Animated.View>
   );
 };
-
-export default AnimatedMove;

@@ -1,1 +1,3 @@
-export { default as AnimatedMove } from './AnimatedMove';
+import { AnimatedMove } from './AnimatedMove';
+
+export { AnimatedMove };

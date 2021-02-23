@@ -1,6 +1,6 @@
 {
   "name": "@airship/rn-components",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React Native components, from basic inputs to animated wrappers,  created by Airship to build quality apps.",
   "main": "src/index",
   "types": "src/types",
