@@ -1,6 +1,6 @@
 {
   "name": "@airship/rn-components",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "React Native components, from basic inputs to animated wrappers,  created by Airship to build quality apps.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,9 +23,11 @@
     "@types/react": "^17.0.2",
     "@types/react-native": "^0.63.50",
     "eslint": "^7.20.0",
-    "typescript": "^4.1.5",
-    "react": "^17.0.1",
-    "react-native": "^0.63.4"
+    "typescript": "^4.1.5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "files": [
     "dist"

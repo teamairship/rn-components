@@ -15,7 +15,7 @@ type AnimatedMoveProps = {
   onEnd?: () => void;
 };
 
-export const AnimatedMove: React.FC<AnimatedMoveProps> = ({
+const AnimatedMove: React.FC<AnimatedMoveProps> = ({
   moveOnMount = true,
   triggerMove = false,
   tension = 18,
@@ -65,3 +65,5 @@ export const AnimatedMove: React.FC<AnimatedMoveProps> = ({
     </Animated.View>
   );
 };
+
+export default AnimatedMove;
