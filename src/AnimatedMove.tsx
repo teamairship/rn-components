@@ -1,6 +1,19 @@
 import React, { useEffect, useRef } from 'react';
-import { Animated } from 'react-native';
-import { AnimatedMoveProps } from './types';
+import { Animated, ViewStyle } from 'react-native';
+
+type AnimatedMoveProps = {
+  moveOnMount?: boolean;
+  triggerMove?: boolean;
+  tension?: number;
+  friction?: number;
+  toX?: number;
+  toY?: number;
+  startX?: number;
+  startY?: number;
+  delay?: number; // ms
+  style?: ViewStyle;
+  onEnd?: () => void;
+};
 
 export const AnimatedMove: React.FC<AnimatedMoveProps> = ({
   moveOnMount = true,
