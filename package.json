@@ -1,9 +1,9 @@
 {
   "name": "@airship/rn-components",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "React Native components, from basic inputs to animated wrappers,  created by Airship to build quality apps.",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/teamairship/rn-components",
   "author": "Austin Jones (jonesaustindev)",
   "license": "MIT",
