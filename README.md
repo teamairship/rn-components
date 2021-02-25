@@ -29,6 +29,8 @@ An animated <b>View</b> that can wrap a React Native component fade a component 
 
 Example:
 ```
+import { AnimatedFade } from '@airship/rn-components';
+
 <AnimatedFade delay={1000}>
   {children}
 </AnimatedFade>
@@ -52,6 +54,8 @@ An animated <b>View</b> that can wrap a React Native component and move its posi
 
 Example:
 ```
+import { AnimatedMove } from '@airship/rn-components';
+
 <AnimatedMove startY={-50} delay={1000}>
   {children}
 </AnimatedMove>
