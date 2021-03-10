@@ -17,8 +17,11 @@ yarn add @airship/rn-components
 
 <br />
 
-## Example App
-🛠 <i>Coming Soon</i>
+## Directory 📚
+- [AnimatedFade](#animatedfade)
+- [AnimatedMove](#animatedmove)
+- [AnimatedPressable](#animatedpressable)
+- [SegmentedControl](#segmentedcontrol)
 
 <br />
 
