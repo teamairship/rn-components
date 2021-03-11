@@ -58,10 +58,12 @@ const SegmentedControl: FC<Props> = ({
       <Animated.View
         style={[
           {
-            ...StyleSheet.absoluteFill,
             position: 'absolute',
-            width: (width - 4) / tabs?.length,
+            left: 0,
+            right: 0,
             top: 0,
+            bottom: 0,
+            width: (width - 4) / tabs?.length,
             marginVertical: 2,
             marginHorizontal: 2,
             backgroundColor: activeSegmentBackgroundColor,

@@ -95,7 +95,9 @@ const AnimatedPressable: React.FC<Props> = ({
           },
           style,
         ]}>
-        {renderComponent && renderComponent(colorInterpolation)}
+        {renderComponent &&
+          //@ts-ignore
+          renderComponent(colorInterpolation ? colorInterpolation : null)}
       </Animated.View>
     </TouchableWithoutFeedback>
   );
