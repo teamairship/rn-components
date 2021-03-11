@@ -13,10 +13,11 @@
     "target": "ESNext"
   },
   "include": [
-    "dist"
+    "src"
   ],
   "exclude": [
-    "**/__tests__/*"
+    "**/__tests__/*",
+    "dist"
   ]
 }
   
