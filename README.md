@@ -1,6 +1,8 @@
-# @airship/rn-components <img align="center" src="./assets/logo.png" width="40" height="40" />
+# @airship/rn-components
 
-This is a component library created and used by Airship for quickly building out **consistent** and **high quality** React Native apps! It is made up of basic inputs and animated wrapper components. This library is included in all [Airfoil](https://github.com/teamairship/airfoil) templates by default.
+<img align="center" src="./assets/logo.png" width="100%" height="auto" />
+
+<br /> This is a component library created and used by Airship for quickly building out **consistent** and **high quality** React Native apps! It is made up of basic inputs and animated wrapper components. This library is included in all [Airfoil](https://github.com/teamairship/airfoil) templates by default.
 
 ## Features
 - ✨ Easy to use, configurable components
