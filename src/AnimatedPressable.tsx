@@ -11,6 +11,7 @@ type Props = {
   colorStart?: string;
   colorEnd?: string;
   isPressed?: boolean;
+  callFunctionOnPressIn?: boolean;
   onPress?: () => void;
   renderComponent?: (
     colorInterpolation: Animated.AnimatedInterpolation,
@@ -28,6 +29,7 @@ const AnimatedPressable: React.FC<Props> = ({
   isPressed,
   onPress,
   renderComponent,
+  callFunctionOnPressIn = false,
 }) => {
   const [pressed, setPressed] = useState(isPressed ? isPressed : false);
   const pressedAnimatedValue = new Animated.Value(0);
@@ -52,7 +54,11 @@ const AnimatedPressable: React.FC<Props> = ({
     Animated.spring(scale, {
       toValue: toScaleValue,
       useNativeDriver: true,
-    }).start();
+    }).start((status) => {
+      if (status.finished && onPress && callFunctionOnPressIn) {
+        onPress();
+      }
+    });
   };
 
   const handlePressOut = () => {
@@ -63,7 +69,7 @@ const AnimatedPressable: React.FC<Props> = ({
       useNativeDriver: true,
     }).start((status) => {
       if (!colorStart && !colorEnd && !outPutColor && status.finished) {
-        if (onPress) {
+        if (onPress && !callFunctionOnPressIn) {
           onPress();
         }
       }

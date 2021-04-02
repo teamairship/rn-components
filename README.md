@@ -20,10 +20,15 @@ yarn add @airship/rn-components
 <br />
 
 ## Directory 📚
-- [AnimatedFade](#animatedfade)
-- [AnimatedMove](#animatedmove)
-- [AnimatedPressable](#animatedpressable)
-- [SegmentedControl](#segmentedcontrol)
+- [@airship/rn-components](#airshiprn-components)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+  - [Directory 📚](#directory-)
+  - [API Reference](#api-reference)
+    - [<b>AnimatedFade</b>](#banimatedfadeb)
+    - [<b>AnimatedMove</b>](#banimatedmoveb)
+    - [<b>AnimatedPressable</b>](#banimatedpressableb)
+    - [<b>SegmentedControl</b>](#bsegmentedcontrolb)
 
 <br />
 
@@ -149,7 +154,8 @@ import { AnimatedPressable } from '@airship/rn-components';
 | <b>colorStart</b> | <i>string</i> | no | `null` | Initial color value, <b>must</b> be given as a rgb string. Color interpolation does not work with hexes. NOTE: Works off of `pressed`. Think of it as a "like" button. If `pressed` has a `true` value, that means the current color is `colorEnd`. |
 | <b>colorEnd</b> | <i>string</i> | no | `null` | End color value, <b>must</b> be given as a rgb string. Color interpolation does not work with hexes. NOTE: Works off of `pressed`. Think of it as a "like" button. If `pressed` has a `true` value, that means the current color is `colorEnd`. |
 | <b>isPressed</b> | <i>boolean</i> | no | `false` | The current state of `AnimatedPressable`. Can be passed a value such as starting with `pressed` set to `true`, which means the `colorEnd` is the starting color. |
-| <b>onPress</b> | <i>() => void</i> | no | `undefined` | When the animation finishes and this function exists, the `onPress` function will be called. |
+| <b>onPress</b> | <i>() => void</i> | no | `undefined` | When the animation finishes (press out) and this function exists, the `onPress` function will be called. |
+| <b>callFunctionOnPressIn</b> | <i>boolean</i> | no | `false` | Setting to true will cause the `onPress` function to call on the press in of the tap instead of the press out default. |
 | <b>renderComponent</b> | <i>(colorInterpolation: Animated.AnimatedInterpolation) => React.ReactElement</i> | no | `undefined` | This render function allows for a child component to be passed with access to the `colorInterpolation` values <b>IF</b> a `colorStart` and `colorEnd` have been set. Otherwise the value will not exist and will render the component without value to `colorInterpolation`. |
 | <b>style</b> | <i>ViewStyle</i> | no | `undefined` | Pass React Native `View` styles to `AnimatedPressable`. |
 
