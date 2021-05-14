@@ -5,14 +5,15 @@
 <br /> This is a component library created and used by Airship for quickly building out **consistent** and **high quality** React Native apps! It is made up of basic inputs and animated wrapper components. This library is included in all [Airfoil](https://github.com/teamairship/airfoil) templates by default.
 
 ## Features
+
 - ✨ Easy to use, configurable components
 - 📱 Animations that use the UI thread for a consistent 60fps on iOS and Android
 - ⏳ Saves you from building basic components from scratch every project
 
-
 ## Getting Started
 
 To add to your project, run the command
+
 ```
 yarn add @airship/rn-components
 ```
@@ -20,6 +21,7 @@ yarn add @airship/rn-components
 <br />
 
 ## Directory 📚
+
 - [@airship/rn-components](#airshiprn-components)
   - [Features](#features)
   - [Getting Started](#getting-started)
@@ -35,9 +37,11 @@ yarn add @airship/rn-components
 ## API Reference
 
 ### <b>AnimatedFade</b>
+
 An animated <b>View</b> that can wrap a React Native component fade a component in or fade it out.
 
 Example:
+
 ```
 import { AnimatedFade } from '@airship/rn-components';
 
@@ -45,14 +49,15 @@ import { AnimatedFade } from '@airship/rn-components';
   {children}
 </AnimatedFade>
 ```
+
 <img src="./assets/AnimatedFade.gif" width="473" height="941" />
 
 | Prop | Type | Required | Default | Description |
 | --- | :--: | :--: | :--: | --- |
-| <b>fadeOnMount</b> | <i>boolean</i> | no | `true` | AnimatedFade is set to fade in its opacity from `0` to `1` on render. |
-| <b>triggerFade</b> | <i>boolean</i> | no | `false` | Setting to `true` will cause the fade animation to start. |
-| <b>startingOpacity</b> | <i>number</i> | no | `0` | Defaults to `0`. Values can range from `0.0 - 1.0` |
-| <b>endingOpacity</b> | <i>number</i> | no | `1` | Defaults to `1`. Values can range from `0.0 - 1.0` |
+| <b>triggerFade</b> | <i>boolean</i> | no | `true` | By default, animation is triggered on mount. `triggerFade` allows for controlled triggering. |
+| <b>loop</b> | <i>boolean</i> | no | `false` | Enables looping for the animation |
+| <b>opacityStart</b> | <i>number</i> | no | `0` | Defaults to `0`. Values can range from `0.0 - 1.0` |
+| <b>opacityEnd</b> | <i>number</i> | no | `1` | Defaults to `1`. Values can range from `0.0 - 1.0` |
 | <b>duration</b> | <i>number</i> | no | `800` | Specify in `ms` how long the fade animation lasts. |
 | <b>delay</b> | <i>number</i> | no | `0` | Specify in `ms` how long to wait until the fade animation occurs. |
 | <b>style</b> | <i>ViewStyle</i> | no | `undefined` | Pass React Native `View` styles to `AnimatedFade`. |
@@ -62,9 +67,11 @@ import { AnimatedFade } from '@airship/rn-components';
 <br />
 
 ### <b>AnimatedMove</b>
+
 An animated <b>View</b> that can wrap a React Native component and move its position.
 
 Example:
+
 ```
 import { AnimatedMove } from '@airship/rn-components';
 
@@ -72,6 +79,7 @@ import { AnimatedMove } from '@airship/rn-components';
   {children}
 </AnimatedMove>
 ```
+
 <img src="./assets/AnimatedMove.gif" width="473" height="941" />
 
 | Prop | Type | Required | Default | Description |
@@ -92,9 +100,11 @@ import { AnimatedMove } from '@airship/rn-components';
 <br />
 
 ### <b>AnimatedPressable</b>
+
 An animated <b>View</b> that changes its scale on press, and returns to its original position on the press out. It can render out a component with props available to it such as color interpolation based on the pressed state.
 
 Example:
+
 ```
 import { AnimatedPressable } from '@airship/rn-components';
 
@@ -144,6 +154,7 @@ import { AnimatedPressable } from '@airship/rn-components';
   />
 </View>
 ```
+
 <img src="./assets/pressable.gif" width="473" height="941" />
 
 | Prop | Type | Required | Default | Description |
@@ -163,9 +174,11 @@ import { AnimatedPressable } from '@airship/rn-components';
 <br />
 
 ### <b>SegmentedControl</b>
+
 An animated tab controller for selections in an app with customizable color schemes.
 
 Example:
+
 ```
 import React, { useState } from 'react';
 import { StyleSheet } from 'react-native';
@@ -222,6 +235,7 @@ export const App = () => {
   })
 }
 ```
+
 <img src="./assets/segmented.gif" width="473" height="941" />
 
 | Prop | Type | Required | Default | Description |
