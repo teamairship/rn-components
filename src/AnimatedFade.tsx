@@ -102,7 +102,3 @@ const AnimatedFade: React.FC<Props> = ({
 };
 
 export default AnimatedFade;
-
-const Test = () => {
-  return <AnimatedFade></AnimatedFade>;
-};
