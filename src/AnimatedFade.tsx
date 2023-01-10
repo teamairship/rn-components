@@ -38,6 +38,7 @@ type Props = {
    * should this animation repeat?
    */
   loop?: boolean;
+  children?: React.ReactNode;
 };
 
 const AnimatedFade: React.FC<Props> = ({

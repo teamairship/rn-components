@@ -13,6 +13,7 @@ type AnimatedMoveProps = {
   delay?: number; // ms
   style?: ViewStyle;
   onEnd?: () => void;
+  children?: React.ReactNode;
 };
 
 const AnimatedMove: React.FC<AnimatedMoveProps> = ({
